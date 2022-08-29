@@ -11,4 +11,4 @@ def counter(request):
     amount_of_words = len(text.split())
     #gets text from index which has called it and splits the text by spaces, the assinging a variable with the len of the list of words.
     return render(request, 'counter.html', {'amount':amount_of_words})
-    #
+    #renders the counter.html page and returns amount of words
